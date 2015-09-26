@@ -14,10 +14,15 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "Peachy", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", '#' %></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
-  <%= yield %>
-
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
